@@ -14,6 +14,6 @@ client.Dispatcher.on(Events.GATEWAY_READY, e => {
 
 // test command
 client.Dispatcher.on(Events.MESSAGE_CREATE, e => {
-    if (e.message.content == "ping")
-        e.message.channel.sendMessage("pong")
+    if (e.message.content == "bloop")
+        e.message.channel.sendMessage("Bloop!")
 })

@@ -1,5 +1,6 @@
 const Discord = require('discordie')
 const config = require('../config')
+const botCommands = require('./botCommands')
 
 const Events = Discord.Events
 const client = new Discord()
@@ -14,6 +15,5 @@ client.Dispatcher.on(Events.GATEWAY_READY, e => {
 
 // test command
 client.Dispatcher.on(Events.MESSAGE_CREATE, e => {
-    if (e.message.content == "bloop")
-        e.message.channel.sendMessage("Bloop!")
+    botCommands(e.message)
 })

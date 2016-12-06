@@ -10,7 +10,8 @@
   "author": "Keerysanth Sribaskaran",
   "license": "ISC",
   "dependencies": {
-    "discordie": "^0.10.0"
+    "discordie": "^0.10.0",
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

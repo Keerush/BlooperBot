@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
     response.send('Bloop!')
 })
 
-app.get('./wakemydyno.txt', (request, response) => {
+app.get('/wakemydyno.txt', (request, response) => {
   response.send('');
 })
 

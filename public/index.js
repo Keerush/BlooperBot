@@ -9,6 +9,10 @@ app.get('/', function(request, response) {
     response.send('Bloop!')
 })
 
+app.get('./wakemydyno.txt', (request, response) => {
+  response.send('');
+})
+
 app.listen(app.get('port'), function() {
     console.log("blooperbot is running at:" + app.get('port'))
 })
